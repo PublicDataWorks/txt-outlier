@@ -12,7 +12,7 @@ function GoogleCallback() {
       return <b> Hello {JSON.stringify(decodedToken)}</b>
     }
   }
-  window.location.assign(import.meta.env.VITE_OAUTH_URL as string)
+  window.location.assign('https://pshrrdazlftosdtoevpf.supabase.co/auth/v1/authorize?provider=google')
 }
 
 export default GoogleCallback
