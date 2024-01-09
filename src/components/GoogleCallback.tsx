@@ -1,6 +1,7 @@
 import { jwtDecode } from 'jwt-decode'
 
 function GoogleCallback() {
+  console.log('asdasdasdasdsa')
   const { hash } = window.location
 
   if (hash) {
