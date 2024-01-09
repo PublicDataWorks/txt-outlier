@@ -12,7 +12,7 @@ function GoogleCallback() {
       return <b> Hello {JSON.stringify(decodedToken)}</b>
     }
   }
-  window.location.assign('https://pshrrdazlftosdtoevpf.supabase.co/auth/v1/authorize?provider=google')
+  window.open('https://pshrrdazlftosdtoevpf.supabase.co/auth/v1/authorize?provider=google', '_blank', 'height=500,width=500');
 }
 
 export default GoogleCallback

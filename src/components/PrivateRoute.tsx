@@ -10,8 +10,7 @@ const PrivateRoute: React.FC<PrivateRouteProperties>  = ({ children }) => {
   if (token) {
     return children;
   }
-  window.location.assign('https://pshrrdazlftosdtoevpf.supabase.co/auth/v1/authorize?provider=google')
-
+  window.open('https://pshrrdazlftosdtoevpf.supabase.co/auth/v1/authorize?provider=google', '_blank', 'height=500,width=500');
 }
 
 PrivateRoute.propTypes = {
